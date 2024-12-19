@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>動画プレーヤー</title>
+    <title>動画</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,8 +12,22 @@
             <source id="video-source" src="C:\Users\wk\Videos\Captures\Rabbit and Steel 2024-12-19 09-21-22.mp4" type="video/mp4">
             お使いのブラウザは動画タグをサポートしていません。
         </video>
-        <input type="file" id="file-input" accept="video/*">
-        <div id="frame-info">0/0</div> <!-- フレーム情報を表示する要素を追加 -->
+        <div class="controls">
+            <div class="center-controls">
+                <input type="file" id="file-input" accept="video/*">
+                <div id="frame-info">0/0</div> <!-- フレーム情報を表示する要素 -->
+                <div id="speed-info">Speed: 1.0x</div> <!-- 再生速度を表示する要素 -->
+            </div>
+            <div id="shortcuts" class="shortcuts">
+                <ul>
+                    <li>スペース: 再生/一時停止</li>
+                    <li>A: 1コマ戻し</li>
+                    <li>D: 1コマ送り</li>
+                    <li>W: 再生速度を+10%</li>
+                    <li>S: 再生速度を-10%</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

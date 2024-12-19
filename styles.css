@@ -16,7 +16,7 @@ body {
 
 video {
     max-width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* videoとの間に多少の空白を追加 */
 }
 
 button {
@@ -30,4 +30,34 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.controls {
+    display: flex;
+    align-items: flex-start; /* 上側に寄せる */
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.center-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+#frame-info, #speed-info {
+    font-size: 16px; /* フレーム情報と再生速度の文字サイズを大きく */
+}
+
+#shortcuts {
+    font-size: 12px; /* 操作方法の文字サイズを少し小さく */
+    padding-right: 20px; /* 右に多少の空白を追加 */
+}
+
+#shortcuts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
